@@ -6,6 +6,7 @@ import { SequelizeConfigService } from './config/sequelize.config.service';
 import { DATABASE_CONFIG } from './config/conf';
 import { AuthModule } from './auth/auth.module';
 import { BoilerPartsModule } from './boiler-parts/boiler-parts.module';
+import { ShopingCartModule } from './shoping-cart/shoping-cart.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { BoilerPartsModule } from './boiler-parts/boiler-parts.module';
     }),
     AuthModule,
     BoilerPartsModule,
+    ShopingCartModule,
   ],
   controllers: [],
   providers: [],
